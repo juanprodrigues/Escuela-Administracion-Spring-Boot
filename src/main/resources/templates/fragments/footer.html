@@ -1,0 +1,7 @@
+
+<footer th:fragment="footer" class="footer py-3 bg-dark fixed-bottom">
+    <div class="container d-flex justify-content-center text-white">
+        <span class="text-muted text-reset"
+              th:text="${session.id != null} ? |${session.nombre} ${session.apellido} - ${session.rol}| : 'Escuela Argentina Nro 1234 - 2021'"></span>
+    </div>
+</footer>
